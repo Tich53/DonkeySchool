@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MON PORTFOLIO</title>
+    <meta name="description" content="Portfolio de Richard Douetté">
   </head>
   <body>
     <header>
@@ -24,7 +25,7 @@
       </section>
       <section>
         <h2>PROJETS REALISES</h2>
-        <img src="https://via.placeholder.com/150" alt="" />
+        <img src="https://via.placeholder.com/150" alt="Image projet 1" title="Image projet 1"/>
         <h3>Projet 1</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
@@ -32,8 +33,8 @@
           maxime corporis recusandae laboriosam hic suscipit exercitationem at
           sapiente expedita itaque architecto.
         </p>
-        <button>En savoir plus</button>
-        <img src="https://via.placeholder.com/150" alt="" />
+        <a href="" title="cliquez ici pour plus de détail sur mon projet 1">En savoir plus</a>
+        <img src="https://via.placeholder.com/150" alt="Image projet 2" title="Image projet 2"/>
         <h3>Projet 2</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
@@ -41,8 +42,8 @@
           maxime corporis recusandae laboriosam hic suscipit exercitationem at
           sapiente expedita itaque architecto.
         </p>
-        <button>En savoir plus</button>
-        <img src="https://via.placeholder.com/150" alt="" />
+        <a href="" title="cliquez ici pour plus de détail sur mon projet 2">En savoir plus</a>
+        <img src="https://via.placeholder.com/150" alt="Image projet 3" title="Image projet 3"/>
         <h3>Projet 3</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
@@ -50,12 +51,12 @@
           maxime corporis recusandae laboriosam hic suscipit exercitationem at
           sapiente expedita itaque architecto.
         </p>
-        <button>En savoir plus</button>
+        <a href="" title="cliquez ici pour plus de détail sur mon projet 3">En savoir plus</a>
       </section>
       <section>
         <h2>ETUDES</h2>
         <div>
-          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="Photo de Richard Douetté" title="Photo de Richard Douetté"/>
         </div>
         <div>
           <ul>
@@ -71,8 +72,7 @@
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             repellat, obcaecati error atque, eaque labore molestias nam commodi,
             modi a sequi possimus facere aliquam hic? Repudiandae neque pariatur
-            deleniti corrupti!</span
-          >
+            deleniti corrupti!</span>
         </div>
         <br />
         <div>
@@ -81,8 +81,7 @@
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             repellat, obcaecati error atque, eaque labore molestias nam commodi,
             modi a sequi possimus facere aliquam hic? Repudiandae neque pariatur
-            deleniti corrupti!</span
-          >
+            deleniti corrupti!</span>
         </div>
         <br />
         <div>
@@ -91,14 +90,13 @@
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             repellat, obcaecati error atque, eaque labore molestias nam commodi,
             modi a sequi possimus facere aliquam hic? Repudiandae neque pariatur
-            deleniti corrupti!</span
-          >
+            deleniti corrupti!</span>
         </div>
       </section>
       <section>
         <h2>ARTICLES</h2>
         <div>
-          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="Photo article 1" title="Image article 1"/>
           <h3>Article 1</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
@@ -106,33 +104,35 @@
             reprehenderit deserunt magnam harum minima excepturi. In temporibus,
             quisquam vel omnis consectetur voluptates distinctio.
           </p>
-          <button>Lire</button>
-          <button>commentaire</button>
+          <span><a href="" title="Lire article 1">Lire</a></span>
+          <span><a href="" title="Commentaires article 1">Commentaires</a></span>
         </div>
         <div>
-            <img src="https://via.placeholder.com/150" alt="" />
-            <h3>Article 1</h3>
+            <img src="https://via.placeholder.com/150" alt="Photo article 2" title="Image article 2"/>
+            <h3>Article 2</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
               officia, tempora quia repudiandae voluptatem nemo fugit
               reprehenderit deserunt magnam harum minima excepturi. In temporibus,
               quisquam vel omnis consectetur voluptates distinctio.
             </p>
-            <button>Lire</button>
-            <button>commentaire</button>
+            <span><a href="" title="Lire article 2">Lire</a></span>
+            <span><a href="" title="Commentaires article 2">Commentaires</a></span>
           </div>        
       </section>
       <section>
           <h2>CONTACT</h2>
-          <label for="nom-et-prénom">Nom et prénom</label>
-          <input type="text" id="nom-et-prénom" required autofocus>
-          <label for="email">Email</label>
-          <input type="text" id="email" required>
-          <label for="message">Message</label>
-          <input type="text" id="message" required>
-          <button>Envoyer</button>
+          <form>
+            <label for="nom-et-prénom">Nom et prénom</label>
+            <input type="text" id="nom-et-prénom" name="Nom et prénom" required autofocus>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+            <label for="message">Message</label>
+            <input type="text" id="message" name="Message" required>
+            <button type="submit">Envoyer</button>
+          </form>
       </section>
-      <footer>MON PORTFOLIO</footer>
+      <footer>mon-portfolio.com</footer>
     </main>
   </body>
 </html>
