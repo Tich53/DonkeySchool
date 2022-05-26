@@ -1,0 +1,50 @@
+/* Images avec la classe "hover-effect" moins opaques lorsqu'on passe la souris dessus*/
+.hover-effect:hover {
+    opacity: 75%;
+}
+
+/* Images avec la classe "image": bordures arrondies + Taille 30% de l'écran */
+.image{
+    border-radius: 3px;
+    width: 30%;    
+}
+
+/*Première image de la partie main en noir et blanc*/
+main img:first-of-type{
+    filter: grayscale(1);
+}
+
+/*Format icone burger*/
+#icone-burger{
+    width: 40px;
+    height: 40px;
+}
+
+/*Mise en plase d'une checkbox cachée pour que le contenu reste à l'affichage une fois cochée*/
+#checkbox-burger{
+    display: none;
+}
+
+/*Cache la navigation tant que la checkbox n'est pas cochée*/
+#checkbox-burger + nav{
+    display: none;
+}
+
+/*Une fois cochée, la navigation apparaît*/
+#checkbox-burger:checked + nav{
+    display: block;
+}
+
+
+.menu{
+    list-style-type: none;  /*Supprime les puces du menu*/
+}
+
+.sous-menu{
+    display: none;          /* Ne pas afficher le sous-menu tant qu'on ne passe pas la souris dessus*/
+    list-style-type: none;  /*Supprime les puces du sous-menu*/
+}
+
+nav>ul li:hover .sous-menu{
+    display: block;         /*dispose le sous menu en block une fois le lien survolé*/
+}
