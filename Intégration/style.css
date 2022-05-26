@@ -1,3 +1,29 @@
+body{
+    background-color: darkgray;
+    margin: 0;
+    margin-top: -22px;
+    padding: 0;
+}
+
+header{
+    background-color: brown;
+    padding: 0;
+
+}
+
+.h1{
+    text-align: center;
+}
+
+
+
+.menu-link a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
 /* Images avec la classe "hover-effect" moins opaques lorsqu'on passe la souris dessus*/
 .hover-effect:hover {
     opacity: 75%;
@@ -16,8 +42,11 @@ main img:first-of-type{
 
 /*Format icone burger*/
 #icone-burger{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5%;
+    top: 0;
 }
 
 /*Mise en plase d'une checkbox cachée pour que le contenu reste à l'affichage une fois cochée*/
@@ -38,13 +67,47 @@ main img:first-of-type{
 
 .menu{
     list-style-type: none;  /*Supprime les puces du menu*/
+    text-align: right;
+    margin-right: 60px;
+    margin-top: 5px;
 }
 
 .sous-menu{
-    display: none;          /* Ne pas afficher le sous-menu tant qu'on ne passe pas la souris dessus*/
+    display: none;          /* Ne pas afficher le sous-menu */
     list-style-type: none;  /*Supprime les puces du sous-menu*/
 }
 
 nav>ul li:hover .sous-menu{
     display: block;         /*dispose le sous menu en block une fois le lien survolé*/
+}
+
+
+
+@media screen and (min-width: 600px) {
+    body{
+        background-color: lightgray;
+    }
+    
+    #icone-burger{
+        display: none;
+    }
+
+    /*Une fois cochée, la navigation apparaît*/
+    #checkbox-burger:not(checked + :checked) + nav{
+     display: flex;
+    }
+   
+    /* Mets le menu à l'horizontal avec un espacement de 20px entre chaque lien*/
+   .menu{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    
+}
+    
+.menu-link a{
+    margin-right: 20px;
+}
+
+
 }
